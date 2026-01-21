@@ -29,7 +29,7 @@ window.translations = {
     why_donate: "Donate NOW to Build the School of Tomorrow.",
 
     // Project
-    project_title: "6 Classrooms, Infinite Possibilities: The Project",
+    project_title: "The Project:<br>6 Classrooms. Infinite Possibilities.",
     project_text:
       "We're creating a vibrant school for children who would otherwise be left behind. The land is ready — generously donated by the local nuns. Now, we need your help to build it.",
     project_render_caption:
@@ -146,7 +146,7 @@ window.translations = {
     why_donate: "Dona ORA per costruire la scuola di domani.",
 
     // Project
-    project_title: "6 Aule, possibilità infinite: il progetto ",
+    project_title: "Il Progetto:<br>6 Aule. Possibilità Infinite.",
     project_text:
       "Stiamo creando una scuola vivace per bambini che altrimenti resterebbero esclusi. Il terreno è pronto — donato generosamente dalle suore locali. Ora abbiamo bisogno del tuo aiuto per costruirla.",
     project_render_caption:
@@ -265,7 +265,7 @@ window.translations = {
     why_donate: "Spendet JETZT, um die Schule der Zukunft zu bauen!",
 
     // Project
-    project_title: "6 Klassenräume, unendliche Möglichkeiten: das Projekt",
+    project_title: "Das Projekt:<br>6 Klassenräume. Unendliche Möglichkeiten.",
     project_text:
       "Wir bauen eine lebendige Schule für Kinder, die sonst ausgeschlossen wären. Das Grundstück ist bereit – großzügig von den lokalen Nonnen gespendet. Jetzt brauchen wir deine Hilfe, um sie zu bauen.",
     project_render_caption:
@@ -352,5 +352,123 @@ window.translations = {
     "404_title": "Seite nicht gefunden",
     "404_text": "Hoppla! Hier geht's nicht weiter. Zurück zur Startseite!",
     "404_back_home": "Zurück zur Startseite",
+  },
+
+  pt: {
+    // Navigation
+    nav_why: "Por que fazemos isto",
+    nav_project: "O Projeto",
+    nav_who: "Quem Somos",
+    nav_donate: "Faça uma doação",
+    nav_involved: "Participe",
+    nav_support: "Apoie-nos",
+
+    // Hero
+    hero_title: "Acenda a Esperança",
+    hero_text: "Junte-se a nós para construir uma escola que transforma vidas: dê força a uma nova geração.",
+    hero_donate: "Quero ajudar!",
+    hero_read: "Partilhe nas Redes Sociais",
+    hero_build: "Construa uma Escola",
+    hero_current_goal: "Objetivo actual: as fundações da escola",
+    hero_next_goal: "Próximo objetivo: estrutura de concreto",
+
+    // Our Why
+    why_title: "A Educação é a Chave para o Desenvolvimento",
+    why_p1:
+      "Em Kenya, devido a dificuldades econômicas, milhares de crianças são excluídas da educação pública.",
+    why_p2:
+      "Irmã Hitha, uma nossa parceira próxima e querida que nos ajudou a construir uma escola em Kerala (Índia), inspirou-nos. Juntos, vamos construir uma nova escola primária na Paróquia de Ngunga, Distrito de Machakos, composta por seis salas de aula, próxima à fronteira com a Tanzânia — uma região profundamente afetada pela pobreza e falta de infraestrutura.",
+    why_p3:
+      "A educação abre as portas para oportunidades. Vamos ajudar crianças a sair da pobreza, fortalecer comunidades locais e reduzir a migração perigosa.",
+    why_p4: "Podes ser parte da mudança. Podes ser a mudança.",
+    why_donate: "Faça a doação AGORA para construir a escola do futuro.",
+
+    // Project
+    project_title: "O Projeto:<br>6 Salas de Aula. Possibilidades Infinitas.",
+    project_text:
+      "Estamos a criar uma escola vibrante para crianças que, de outra forma, seriam excluídas. O terreno está pronto — generosamente doado pelas freiras locais. Agora precisamos da sua ajuda para construí-la.",
+    project_render_caption:
+      "Seis salas de aula brilhantes e acolhedoras projetadas para inspirar criatividade e comunidade: um lar para a esperança.",
+    project_plan_caption:
+      "Cada espaço projetado para garantir segurança, pertencimento e imaginação: construído com cuidado.",
+
+    // Timeline
+    timeline_well: "Construção de Poço",
+    timeline_well_desc: "Acesso a água limpa para todos os alunos",
+    timeline_solar: "Painéis Solares",
+    timeline_solar_desc: "Energia sustentável para a escola",
+    timeline_foundations: "Fundações",
+    timeline_foundations_desc: "Actualmente em progresso",
+    timeline_concrete: "Estrutura de betão armado",
+    timeline_concrete_desc: "Próxima fase após as fundações",
+    timeline_walls: "Reboco",
+    timeline_walls_desc: "Construção de paredes e trabalhos internos",
+    timeline_floor: "Revestimentos de Pisos",
+    timeline_floor_desc: "Pisos seguros e duráveis",
+    timeline_electric: "Iluminação",
+    timeline_electric_desc: "Sistemas elétricos e iluminação",
+    timeline_water: "Água",
+    timeline_water_desc: "Sistemas de água e esgotos",
+    timeline_windowsdoors: "Janelas e Portas",
+    timeline_windowsdoors_desc: "Últimos retoques para a conclusão",
+
+    // Who We Are
+    who_title: "Quem Somos: Gruppo Nairobi",
+    who_text:
+      "Somos Gruppo Nairobi, uma organização sem fins lucrativos. A educação realmente abre a via para o desenvolvimento: isso é o que acreditamos. A nossa pequena equipa transforma sonhos em realidade: todos trabalham lado a lado para e com as comunidades locais.",
+    role_president: "Presidente",
+    role_vp: "Vice-presidente",
+    role_admin: "Administrador",
+
+    // Bottom Values
+    value_funding: "Financiamento Transparente",
+    value_funding_text: "Cada centavo vai diretamente para o projeto escolar, gerenciado de forma segura através do GoFundMe.",
+    value_global: "Movimento Global",
+    value_global_text: "Seja parte de uma família crescente de changemakers do mundo inteiro.",
+
+    // CTA
+    cta_title: "Juntos, Somos Mais Fortes",
+    cta_p1:
+      "Cada doação nos aproxima mais do objetivo de abrir as portas da escola para os primeiros alunos. Leia mensagens de incentivo e generosidade de nossos doadores.",
+    cta_donate: "Faça o Donativo Agora. Junte-se a mudança.",
+    cta_share: "Partilhe na Redes Sociais",
+    cta_contact: "Contacte-nos",
+
+    // Get Involved Section
+    involved_title: "Participe",
+    involved_subtitle: "Junte-se à nossa incrível comunidade de streamers que apoiam a causa",
+
+    // Streamers
+    streamer_live: "AO VIVO",
+    watch_stream: "Assista ao Stream",
+    streamer_desc_1: "Apoiar a educação através de streams de jogos e eventos da comunidade.",
+    streamer_desc_2: "Streamer versátil apaixonado por fazer a diferença na educação.",
+    streamer_desc_3: "Jogos para o bem - arrecadando fundos através de streams e eventos de caridade.",
+    streamer_desc_4: "Content creator criativo que suporta iniciativas educativas em todo o mundo.",
+
+    // Partnership CTA
+    become_streamer_title: "Quer tornar-se num streamer parceiro?",
+    become_streamer_text: "Junte-se à nossa comunidade e ajude-nos a arrecadar fundos fazendo o que realmente gosta!",
+    contact_partnership: "Contacte-nos para a parceria",
+
+    // Support Project
+    support_title: "Suporte ao Nosso Projeto",
+    support_info_title: "Cada Donativo Faz a Diferença",
+    support_info_text:
+      "O seu contributo apoia diretamente a construção de salas de aula, fornecendo água limpa e criando oportunidades educativas para crianças em Kenia. Utilizamos o GoFundMe para garantir doações transparentes e seguras.",
+    feature_secure_title: "Doações Seguras",
+    feature_secure_text: "Todas os donativos são processados de forma segura através do GoFundMe",
+    feature_transparent_title: "100% Transparente",
+    feature_transparent_text: "Acompanhe exatamente como o seu donativo é usado",
+    feature_impact_title: "Impacto Direto",
+    feature_impact_text: "Cada euro vai diretamente para a construção da escola",
+    donate_now: "Faça o Donativo Agora",
+    support_note: "Donativo seguro através do GoFundMe",
+    view_campaign: "Visualizar Campanha Completa",
+
+    // Error page
+    "404_title": "Página Não Encontrada",
+    "404_text": "Ops! O conteúdo que você procura não existe ou foi movido. Vamos levar-te de volta para a página inicial!",
+    "404_back_home": "Voltar para a Página Inicial",
   },
 }

@@ -513,24 +513,52 @@ class TwitchClient {
   }
 }
 
-// Initialize
+// Initialize - but only if element exists, otherwise wait for manual initialization
 let twitchClient = null
 
-try {
-  twitchClient = new TwitchClient()
-
-  // Global debug functions (only in development)
-  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-    window.twitchClient = twitchClient
-    window.twitchDebug = {
-      refresh: () => twitchClient?.forceRefresh(),
-      status: () => twitchClient?.getStatus(),
-      destroy: () => twitchClient?.destroy(),
-    }
+const initializeTwitchClient = () => {
+  // Check if already initialized
+  if (twitchClient && twitchClient.isInitialized) {
+    return twitchClient
   }
-} catch (error) {
-  console.error("❌ Failed to initialize Twitch client:", error)
+
+  // Check if element exists before initializing
+  const container = document.querySelector("#streamers-container")
+  if (!container) {
+    // Element doesn't exist yet, will be initialized later by components.js
+    return null
+  }
+
+  try {
+    if (!twitchClient) {
+      twitchClient = new TwitchClient()
+    } else if (!twitchClient.isInitialized) {
+      // Retry initialization if it failed before
+      twitchClient.init()
+    }
+
+    // Global debug functions (only in development)
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      window.twitchClient = twitchClient
+      window.twitchDebug = {
+        refresh: () => twitchClient?.forceRefresh(),
+        status: () => twitchClient?.getStatus(),
+        destroy: () => twitchClient?.destroy(),
+      }
+    }
+
+    return twitchClient
+  } catch (error) {
+    console.error("❌ Failed to initialize Twitch client:", error)
+    return null
+  }
 }
+
+// Try to initialize immediately (will fail silently if element doesn't exist)
+initializeTwitchClient()
+
+// Expose initialization function globally for components.js
+window.initializeTwitchClient = initializeTwitchClient
 
 // Cleanup on page unload
 window.addEventListener("beforeunload", () => {

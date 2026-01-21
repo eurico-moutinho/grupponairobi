@@ -241,22 +241,28 @@ class LightboxComponent {
 class ShareModalComponent {
   constructor() {
     this.modal = document.getElementById("share-modal")
-    this.triggers = document.querySelectorAll('[data-key="hero_read"], [data-key="cta_share"]')
     this.closeBtn = document.querySelector(".share-close")
     this.copyBtn = document.getElementById("copy-link")
+    this.lastFocusedElement = null
+    this._isBound = false
 
     if (!this.modal) return
     this.init()
   }
 
   init() {
-    // Set up triggers
-    this.triggers.forEach((trigger) => {
-      trigger.addEventListener("click", (e) => {
+    if (!this._isBound) {
+      // Event delegation so triggers work even when loaded dynamically (components/*.html)
+      document.addEventListener("click", (e) => {
+        const trigger = e.target.closest?.('[data-key="hero_read"], [data-key="cta_share"]')
+        if (!trigger) return
+
         e.preventDefault()
-        this.openModal()
+        this.openModal(trigger)
       })
-    })
+
+      this._isBound = true
+    }
 
     // Close button
     if (this.closeBtn) {
@@ -283,7 +289,9 @@ class ShareModalComponent {
     })
   }
 
-  openModal() {
+  openModal(triggerEl = null) {
+    this.lastFocusedElement = triggerEl || document.activeElement
+
     this.modal.style.display = "block"
     this.modal.setAttribute("aria-hidden", "false")
 
@@ -307,6 +315,10 @@ class ShareModalComponent {
     }, 300)
 
     document.body.style.overflow = ""
+
+    if (this.lastFocusedElement && typeof this.lastFocusedElement.focus === "function") {
+      this.lastFocusedElement.focus()
+    }
   }
 
   async copyLink() {
