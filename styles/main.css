@@ -27,6 +27,7 @@
 
 /* Utility styles - responsive and helper classes */
 @import url("./utilities/responsive.css");
+@import url("./utilities/animations.css");
 
 /* ===== LEGACY SUPPORT & SPECIFIC OVERRIDES ===== */
 

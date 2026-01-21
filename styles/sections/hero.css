@@ -61,6 +61,16 @@
   max-width: 60%;
   display: flex;
   flex-direction: column;
+  animation: fade-in-up 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fade-in-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Ensure the hero h1 styling is preserved */
@@ -99,6 +109,9 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   min-width: 280px;
+  animation: fade-in-up 1s ease-out 0.3s forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .hero-feature:hover {
@@ -327,7 +340,7 @@
 
   .hero-feature {
     bottom: var(--space-md);
-    left: 50%;
+    left: auto;
     right: auto;
     transform: translateX(-50%);
     width: calc(100% - 1.5rem);

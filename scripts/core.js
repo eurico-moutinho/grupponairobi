@@ -496,6 +496,45 @@ class AccessibilityEnhancer {
   }
 }
 
+// Scroll Animation Handler
+class ScrollAnimator {
+  constructor() {
+    this.observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.15,
+    }
+    this.init()
+  }
+
+  init() {
+    // Add animation classes to major sections if they don't have them
+    const sections = document.querySelectorAll("section, .hero-content, .project-intro, .timeline-item, .streamer-card, .team-member, .value")
+
+    sections.forEach((section, index) => {
+      section.classList.add("animate-on-scroll")
+      // Add staggered delays for items in the same container
+      if (section.classList.contains("timeline-item") || section.classList.contains("team-member") || section.classList.contains("value")) {
+        const delay = (index % 3) * 100 + 100
+        section.style.transitionDelay = `${delay}ms`
+      }
+    })
+
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible")
+          this.observer.unobserve(entry.target) // Only animate once
+        }
+      })
+    }, this.observerOptions)
+
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      this.observer.observe(el)
+    })
+  }
+}
+
 // Error Handler
 class ErrorHandler {
   constructor() {
@@ -574,6 +613,10 @@ const initializeCoreComponents = () => {
 
     if (!window.accessibilityEnhancer) {
       window.accessibilityEnhancer = new AccessibilityEnhancer()
+    }
+
+    if (!window.scrollAnimator) {
+      window.scrollAnimator = new ScrollAnimator()
     }
 
     if (!window.errorHandler) {
