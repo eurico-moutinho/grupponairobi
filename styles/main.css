@@ -14,6 +14,7 @@
 @import url("./components/live-indicators.css");
 @import url("./components/modals.css");
 @import url("./components/loading.css");
+@import url("./components/language-selector.css");
 
 /* Section styles - page-specific sections */
 @import url("./sections/hero.css");
@@ -24,6 +25,7 @@
 @import url("./sections/support.css");
 @import url("./sections/footer.css");
 @import url("./sections/cta.css");
+@import url("./sections/who-we-are.css");
 
 /* Utility styles - responsive and helper classes */
 @import url("./utilities/responsive.css");

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Involved – Gruppo Nairobi</title>
+<meta name="description" content="Join our community of streamers and supporters. Help us build a school in Kenya.">
+<meta name="author" content="Gruppo Nairobi Team">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b1d26">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' cdnjs.cloudflare.com; connect-src 'self' https://gruppo-nairobi-api.vercel.app;">
+
+<!-- Open Graph / Social Meta Tags -->
+<meta property="og:title" content="Get Involved – Gruppo Nairobi">
+<meta property="og:description" content="Join our community of streamers and supporters. Help us build a school in Kenya.">
+<meta property="og:image" content="./images/og-image.jpg">
+<meta property="og:url" content="https://grupponairobi.org/get-involved.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Get Involved – Gruppo Nairobi">
+<meta name="twitter:description" content="Join our community of streamers and supporters. Help us build a school in Kenya.">
+<meta name="twitter:image" content="./images/og-image.jpg">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="./images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./images/favicons/favicon.svg" />
+<link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Charity" />
+<link rel="manifest" href="./images/favicons/site.webmanifest" />
+
+<!-- Preconnect & Preload resources -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://www.gofundme.com">
+<link rel="preload" href="./fonts/Geist-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<!-- Font Awesome async loading -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      as="style" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous"
+      onload="this.onload=null;this.rel='stylesheet'"
+      onerror="this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous">
+</noscript>
+
+<link rel="stylesheet" href="./styles/main.css">
+
+<script src="./translations/translations.js" defer></script>
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<header>
+<div class="container">
+  <div class="logo">
+    <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+      <img src="./images/logo.webp" alt="Gruppo Nairobi Logo" width="46" height="46">
+      <div class="logo-text">
+        <span>ASSOCIAZIONE</span>
+        <span class="brand">GRUPPO NAIROBI</span>
+      </div>
+    </a>
+  </div>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" class="lang" data-key="nav_home">Home</a></li>
+      <li><a href="get-involved.html" class="lang active" data-key="nav_involved">Get Involved</a></li>
+      <li><a href="who-we-are.html" class="lang" data-key="nav_who">Who We Are</a></li>
+      <li><a href="donate.html" class="lang" data-key="nav_donate">Donate</a></li>
+      <li>
+        <div class="language-switcher">
+          <label for="language-select" class="sr-only">Select Language</label>
+          <select id="language-select" class="language-select" aria-label="Select language">
+            <option value="en">ENG</option>
+            <option value="it">ITA</option>
+            <option value="de">DEU</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+</div>
+</header>
+
+<main id="main">
+  <section class="page-hero section-light">
+    <div class="container">
+      <h1 class="lang" data-key="involved_title">Get Involved</h1>
+      <p class="lang" data-key="involved_subtitle">Join our amazing community of streamers supporting the cause</p>
+    </div>
+  </section>
+
+  <section id="get-involved" class="section">
+    <div class="container">
+      <div class="streamers-grid" id="streamers-container">
+        <div class="streamer-skeleton">
+          <div class="streamer-skeleton-card">
+            <div class="streamer-skeleton-avatar skeleton"></div>
+            <div class="streamer-skeleton-name skeleton"></div>
+            <div class="streamer-skeleton-followers skeleton"></div>
+            <div class="streamer-skeleton-desc skeleton"></div>
+            <div class="streamer-skeleton-desc skeleton"></div>
+            <div class="streamer-skeleton-button skeleton"></div>
+          </div>
+          <div class="streamer-skeleton-card">
+            <div class="streamer-skeleton-avatar skeleton"></div>
+            <div class="streamer-skeleton-name skeleton"></div>
+            <div class="streamer-skeleton-followers skeleton"></div>
+            <div class="streamer-skeleton-desc skeleton"></div>
+            <div class="streamer-skeleton-desc skeleton"></div>
+            <div class="streamer-skeleton-button skeleton"></div>
+          </div>
+          <div class="streamer-skeleton-card">
+            <div class="streamer-skeleton-avatar skeleton"></div>
+            <div class="streamer-skeleton-name skeleton"></div>
+            <div class="streamer-skeleton-followers skeleton"></div>
+            <div class="streamer-skeleton-desc skeleton"></div>
+            <div class="streamer-skeleton-desc skeleton"></div>
+            <div class="streamer-skeleton-button skeleton"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="get-involved-cta">
+        <h3 class="lang" data-key="become_streamer_title">Want to become a partner streamer?</h3>
+        <p class="lang" data-key="become_streamer_text">Join our community and help us raise funds while doing what you love!</p>
+        <a href="mailto:info@grupponairobi.org?subject=Streamer Partnership" class="btn btn-primary lang" data-key="contact_partnership" rel="noopener noreferrer">
+          Contact Us for Partnership
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+<div class="container footer-container">
+  <div class="footer-left">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Gruppo Nairobi Logo" width="60" height="40">
+      <div class="logo-text">
+        <span>ASSOCIAZIONE</span>
+        <span class="brand">GRUPPO NAIROBI</span>
+      </div>
+    </div>
+    <div class="footer-description">
+      <div class="organization-info">
+        <p class="org-name">GRUPPO NAIROBI</p>
+        <p>Associazione Gruppo Nairobi – Associazione di Promozione Sociale/APS – Ente del Terzo Settore/ETS</p>
+        <p>Iscrizione al RUNTS – Rep. N° 147799 – Associazione con riconoscimento di Personalità Giuridica</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-links">
+      <div class="footer-column">
+        <h3><a href="index.html" class="footer-link lang" data-key="nav_home">Home</a></h3>
+        <h3><a href="get-involved.html" class="footer-link lang" data-key="nav_involved">Get Involved</a></h3>
+        <h3><a href="who-we-are.html" class="footer-link lang" data-key="nav_who">Who We Are</a></h3>
+        <h3><a href="donate.html" class="footer-link lang" data-key="nav_donate">Donate</a></h3>
+      </div>
+      <div class="footer-column">
+        <div class="language-switcher">
+          <label for="language-select-footer" class="sr-only">Select Language</label>
+          <select id="language-select-footer" class="language-select" aria-label="Select language">
+            <option value="en">ENG</option>
+            <option value="it">ITA</option>
+            <option value="de">DEU</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  © COPYRIGHT GRUPPO NAIROBI – TUTTI I DIRITTI RISERVATI
+</div>
+</footer>
+
+<script src="./scripts/config.js" defer></script>
+<script src="./scripts/core.js" defer></script>
+<script src="./scripts/ui-components.js" defer></script>
+<script src="./scripts/twitch-client.js" defer></script>
+
+</body>
+</html>

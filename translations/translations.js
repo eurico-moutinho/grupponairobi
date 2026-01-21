@@ -1,12 +1,40 @@
 window.translations = {
   en: {
     // Navigation
+    nav_home: "Home",
     nav_why: "Why We Do It",
     nav_project: "The Project",
     nav_who: "Who We Are",
     nav_donate: "Donate",
     nav_involved: "Get Involved",
     nav_support: "Support Us",
+
+    // Who We Are Page
+    who_page_title: "Who We Are",
+    who_page_subtitle: "Meet the people turning dreams into reality.",
+    
+    // Sister Hitha
+    hitha_title: "Sister Hitha",
+    hitha_role: "Our Inspiration & Partner",
+    hitha_bio: "Sister Hitha has dedicated her life to serving the poor. After successfully building a school in Kerala, India, she has now turned her attention to Kenya. Her mission is simple yet powerful: to provide education to those who need it most.",
+    hitha_mission: "In Ngunga Parish, she saw children eager to learn but lacking the means. She is the driving force on the ground, ensuring that every donation translates into real progress for the community.",
+    
+    // Grandpa
+    grandpa_title: "Grandpa",
+    grandpa_role: "Wisdom & Guidance",
+    grandpa_bio: "\"Grandpa\" brings years of experience and a heart full of compassion to our project. He believes that it's never too late to make a difference.",
+    grandpa_mission: "His role is to guide us with wisdom, reminding us that patience and persistence are key to building something that lasts. He is the emotional anchor of our team.",
+    
+    // Group
+    group_title: "The Group: Gruppo Nairobi",
+    group_text: "We are a non-profit organization driven by the belief that education unlocks true development.",
+    
+    // Stories
+    stories_title: "Stories from the People",
+    story_1: "\"This school will be a blessing for our village. Our children walk for miles to get to the nearest school. This will change everything.\"",
+    story_2: "\"I want to be a doctor when I grow up. This school will help me achieve my dream.\"",
+    story_3: "\"Education is the only way out of poverty. We are grateful for Gruppo Nairobi's support.\"",
+    follow_instagram: "Follow us on Instagram",
 
     // Hero
     hero_title: "Ignite Hope",
@@ -118,12 +146,40 @@ window.translations = {
 
   it: {
     // Navigation
+    nav_home: "Home",
     nav_why: "Perché lo facciamo",
     nav_project: "Il Progetto",
     nav_who: "Chi Siamo",
     nav_donate: "DONA ORA",
     nav_involved: "Partecipa",
     nav_support: "Sostienici",
+
+    // Who We Are Page
+    who_page_title: "Chi Siamo",
+    who_page_subtitle: "Incontra le persone che trasformano i sogni in realtà.",
+    
+    // Sister Hitha
+    hitha_title: "Suor Hitha",
+    hitha_role: "La Nostra Ispirazione e Partner",
+    hitha_bio: "Suor Hitha ha dedicato la sua vita al servizio dei poveri. Dopo aver costruito con successo una scuola in Kerala, India, ora ha rivolto la sua attenzione al Kenya. La sua missione è semplice ma potente: fornire istruzione a chi ne ha più bisogno.",
+    hitha_mission: "Nella parrocchia di Ngunga, ha visto bambini desiderosi di imparare ma privi di mezzi. È la forza trainante sul campo, assicurando che ogni donazione si traduca in un progresso reale per la comunità.",
+    
+    // Grandpa
+    grandpa_title: "Nonno",
+    grandpa_role: "Saggezza e Guida",
+    grandpa_bio: "\"Nonno\" porta anni di esperienza e un cuore pieno di compassione al nostro progetto. Crede che non sia mai troppo tardi per fare la differenza.",
+    grandpa_mission: "Il suo ruolo è guidarci con saggezza, ricordandoci che pazienza e perseveranza sono fondamentali per costruire qualcosa che duri. È l'ancora emotiva del nostro team.",
+    
+    // Group
+    group_title: "Il Gruppo: Gruppo Nairobi",
+    group_text: "Siamo un'organizzazione no-profit guidata dalla convinzione che l'istruzione sblocchi il vero sviluppo.",
+    
+    // Stories
+    stories_title: "Storie dalle Persone",
+    story_1: "\"Questa scuola sarà una benedizione per il nostro villaggio. I nostri figli camminano per chilometri per raggiungere la scuola più vicina. Questo cambierà tutto.\"",
+    story_2: "\"Voglio diventare un dottore da grande. Questa scuola mi aiuterà a realizzare il mio sogno.\"",
+    story_3: "\"L'istruzione è l'unica via d'uscita dalla povertà. Siamo grati per il supporto del Gruppo Nairobi.\"",
+    follow_instagram: "Seguici su Instagram",
 
     // Hero
     hero_title: "Accendi la Speranza",
@@ -237,12 +293,40 @@ window.translations = {
 
   de: {
     // Navigation
+    nav_home: "Startseite",
     nav_why: "Warum Wir Es Tun",
     nav_project: "Das Projekt",
     nav_who: "Wer Wir Sind",
     nav_donate: "Spenden",
     nav_involved: "Mitmachen",
     nav_support: "Unterstütze Uns",
+
+    // Who We Are Page
+    who_page_title: "Wer Wir Sind",
+    who_page_subtitle: "Triff die Menschen, die Träume in Realität verwandeln.",
+    
+    // Sister Hitha
+    hitha_title: "Schwester Hitha",
+    hitha_role: "Unsere Inspiration & Partnerin",
+    hitha_bio: "Schwester Hitha hat ihr Leben dem Dienst an den Armen gewidmet. Nach dem erfolgreichen Bau einer Schule in Kerala, Indien, hat sie nun ihre Aufmerksamkeit auf Kenia gerichtet. Ihre Mission ist einfach, aber kraftvoll: Bildung für diejenigen bereitzustellen, die sie am dringendsten benötigen.",
+    hitha_mission: "In der Pfarrei Ngunga sah sie Kinder, die lernen wollten, aber keine Mittel dazu hatten. Sie ist die treibende Kraft vor Ort und stellt sicher, dass jede Spende in echten Fortschritt für die Gemeinschaft umgewandelt wird.",
+    
+    // Grandpa
+    grandpa_title: "Opa",
+    grandpa_role: "Weisheit & Führung",
+    grandpa_bio: "\"Opa\" bringt jahrelange Erfahrung und ein Herz voller Mitgefühl in unser Projekt ein. Er glaubt, dass es nie zu spät ist, einen Unterschied zu machen.",
+    grandpa_mission: "Seine Rolle ist es, uns mit Weisheit zu führen und uns daran zu erinnern, dass Geduld und Ausdauer der Schlüssel sind, um etwas Dauerhaftes aufzubauen. Er ist der emotionale Anker unseres Teams.",
+    
+    // Group
+    group_title: "Die Gruppe: Gruppo Nairobi",
+    group_text: "Wir sind eine gemeinnützige Organisation, die von der Überzeugung getrieben wird, dass Bildung wahre Entwicklung ermöglicht.",
+    
+    // Stories
+    stories_title: "Geschichten von den Menschen",
+    story_1: "\"Diese Schule wird ein Segen für unser Dorf sein. Unsere Kinder laufen kilometerweit zur nächsten Schule. Das wird alles verändern.\"",
+    story_2: "\"Ich möchte Arzt werden, wenn ich groß bin. Diese Schule wird mir helfen, meinen Traum zu verwirklichen.\"",
+    story_3: "\"Bildung ist der einzige Weg aus der Armut. Wir sind dankbar für die Unterstützung von Gruppo Nairobi.\"",
+    follow_instagram: "Folge uns auf Instagram",
 
     // Hero
     hero_title: "Hoffnung Entfachen",
